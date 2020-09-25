@@ -8,14 +8,14 @@ function(a number squared)
             precision = 0
          while root guess^2 != number squared
                while absolute value(root guess - prev guess) >= 1/10^precision
-                     if number sqaured - root guess^2 isNegative
+                     if number squared - root guess^2 isNegative
                         prev guess = root guess
                         if root guess - 1 == prev guess
                            root guess = root guess - (9 * 1/10^(precision + 1)
                         else
                            root guess = root guess - 1/10^precision
                         continue
-                     else if number sqaured - root Guess^2 !isNegative
+                     else if number squared - root Guess^2 !isNegative
                         prev guess = root guess
                         root guess = root guess + 1/10^precision
                         continue
