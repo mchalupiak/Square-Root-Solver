@@ -1,15 +1,19 @@
 function(a number squared)
-         root guess = number squared/ 2
+         root guess = number squared / 2
          prev guess = root guess - 1
-         precision = 0
+         size = index of . in number squared - 1
+         if size > 2
+            precision = (size * -1)
+         else
+            precision = 0
          while root guess^2 != number squared
                while absolute value(root guess - prev guess) >= 1/10^precision
                      if number sqaured - root guess^2 isNegative
                         prev guess = root guess
                         if root guess - 1 == prev guess
                            root guess = root guess - (9 * 1/10^(precision + 1)
-                           else
-                                root guess = root guess - 1/10^precision
+                        else
+                           root guess = root guess - 1/10^precision
                         continue
                      else if number sqaured - root Guess^2 !isNegative
                         prev guess = root guess
