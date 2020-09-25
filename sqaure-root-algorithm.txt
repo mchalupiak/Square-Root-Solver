@@ -3,7 +3,7 @@ function(a number squared)
          prev guess = root guess - 1
          precision = 0
          while root guess^2 != number squared
-               while prev guess - root guess >= 1/10^precision or root guess - prev guess >= 1/10^precision
+               while absolute value(root guess - prev guess) >= 1/10^precision
                      if number sqaured - root guess^2 isNegative
                         prev guess = root guess
                         if root guess - 1 == prev guess
